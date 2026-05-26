@@ -21,7 +21,7 @@ public class JuegoColas {
 
         while (numJugadores > 1) {
             int pases = rand.nextInt(5) + 1;
-            System.out.println("LLA papa se pasa " + pases + " veces:");
+            System.out.println("La papa se pasa " + pases + " veces:");
 
             for (int i = 0; i < pases; i++) {
                 eliminarDeColaCirc(Datos, MAX, P, U, datoExtraido);
@@ -41,7 +41,7 @@ public class JuegoColas {
         }
 
         eliminarDeColaCirc(Datos, MAX, P, U, datoExtraido);
-        System.out.println("¡EL JUGADOR " + datoExtraido[0] + " ES EL GANADOR!");
+        System.out.println("El Jugador " + datoExtraido[0] + " ganó");
     }
 
     public static void insertarEnColaCirc(int[] datos, int max, int[] p, int[] u, int dato) {
