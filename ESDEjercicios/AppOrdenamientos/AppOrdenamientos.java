@@ -5,23 +5,15 @@ public class AppOrdenamientos {
     public static void main(String[] args) {
         // TODO code application logic here
         // int []v={60,70,50,30,100,80,90}; <-prueba de escritorio con estos valores
-        int[] v = new int[500];
-        Random random = new Random();
-        Ordenamiento ordenamiento = new Ordenamiento();
 
-        System.out.println("datos desordenados ");
-        for (int i = 0; i < v.length; i++) {
-            v[i] = random.nextInt(1000);
-            System.out.println(v[i]);
-        }
-        ordenamiento.burbujaAsc(v);
+        Ordenamiento ord = new Ordenamiento();
 
-        System.out.println("---------------------------------------------------------");
+        int[] valores = { 14,68,4,16,46,28,11,33,57,21,13,29,62,36,3,9};
 
-        System.out.println("datos ordenados");
-        for (int i = 0; i < v.length; i++) {
-            System.out.println(v[i]);
-        }
+
+        System.out.println("-----------------------------");
+
+        ord.shellAsc(valores);
 
     }
 

@@ -2,5 +2,6 @@
     "java.project.sourcePaths": [
         "ESDEjercicios/HolaMundo",
         "ESDEjercicios/JuegoColas"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
